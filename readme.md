@@ -1,5 +1,5 @@
 # What is spark-kompactor
-This is a tool written in pyspark to compact small files underline for Hive tables on HDFS. This helps to reduce the workload burden on Name Node of a Hadoop cluster. More details of why many small files on Hadoop causing problem can be found from [here]().
+This is a tool written in pyspark to compact small files underline for Hive tables on HDFS. This helps to reduce the workload burden on Name Node of a Hadoop cluster. More details of why many small files on Hadoop causing problem can be found from [here](https://vanducng.dev/2020/12/05/Compact-multiple-small-files-on-HDFS/).
 
 # How it works
 The tool works for only table having partitions and can run on scheduled for maintanance purpose. This will help to prevent conflict writting on latest partition as most of our jobs are running in incremental manner. Below steps showing its compacting operation:
