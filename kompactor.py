@@ -116,7 +116,7 @@ if __name__=="__main__":
     # Get tmp folder path: sc._jsc.sc().getCheckpointDir().get()
 
     # Prepare configuration
-    parser = argparse.ArgumentParser(description="Decode and Vectorize datascore raw data")
+    parser = argparse.ArgumentParser(description="Spark application to to compact data on Hive")
     parser.add_argument("--table_name", type=str, required=True, help="Table Name to compact")
 
     args = parser.parse_args()
