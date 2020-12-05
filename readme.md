@@ -15,7 +15,11 @@ The tool works for only table having partitions and can run on scheduled for mai
 As this is a Spark application, simply run below spark-submit command with your input table name. Bear in mind that, your account should be accessible and have DML privilege to that table.
 
 ```bash
-spark-submit --master yarn --deploy-mode client --driver-memory 2g --executor-memory 2g --executor-cores 2 --files logging.ini kompactor.py --table_name schema_name.table_name
+spark-submit --master yarn \
+--deploy-mode client --driver-memory 2g \
+--executor-memory 2g --executor-cores 2 \
+--files logging.ini kompactor.py \
+--table_name schema_name.table_name
 ```
 
 ## References
